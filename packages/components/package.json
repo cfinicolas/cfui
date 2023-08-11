@@ -2,6 +2,9 @@
   "name": "@cfui/components",
   "version": "0.0.1-development.4",
   "license": "ISC",
+  "publishConfig": {
+    "access": "public"
+  },
   "packageManager": "^yarn@1.22.0",
   "engines": {
     "node": "^18.12.0",
@@ -31,5 +34,6 @@
   },
   "files": [
     "dist"
-  ]
+  ],
+  "gitHead": "595907edc244a45e47f7bd0ea08ba8c0d157c06f"
 }
