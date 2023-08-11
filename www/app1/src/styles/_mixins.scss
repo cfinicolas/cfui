@@ -1,0 +1,47 @@
+@use './functions' as fn;
+@use './variables' as var;
+
+/**
+ * Mixins
+ */
+
+/**
+ * Screen reader
+ */
+@mixin sr-only() {
+  width: fn.rem(1);
+  height: fn.rem(1);
+  margin: fn.rem(-1);
+  padding: 0;
+  position: absolute;
+  overflow: hidden;
+  white-space: nowrap;
+  clip: rect(fn.rem(1), fn.rem(1), fn.rem(1), fn.rem(1));
+  clip-path: inset(50%);
+}
+
+/**
+ * Breakpoints (Screen)
+ */
+@mixin screen($breakpoint) {
+  @each $breakpoints, $size in var.$screen {
+    @if $breakpoint == $breakpoints {
+      @media screen and (min-width: $size) {
+        @content;
+      }
+    }
+  }
+}
+
+/**
+ * Container
+ */
+@mixin container() {
+  display: block;
+  width: 100%;
+  max-width: fn.rem(var.$container-width + (var.$container-gutter * 2));
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: fn.rem(var.$container-gutter);
+  padding-left: fn.rem(var.$container-gutter);
+}

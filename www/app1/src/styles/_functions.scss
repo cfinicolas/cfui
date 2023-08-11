@@ -1,0 +1,10 @@
+@use 'sass:math';
+@use './variables' as var;
+
+@function stripUnit($value) {
+  @return math.div($value, ($value * 0 + 1));
+}
+
+@function rem($pixels) {
+  @return #{math.div(stripUnit($pixels), stripUnit(var.$root-font-size))}rem;
+}
