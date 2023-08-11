@@ -1,6 +1,6 @@
 {
   "name": "@cfui/components",
-  "version": "0.0.1-development.4",
+  "version": "0.0.1-development.5",
   "license": "ISC",
   "publishConfig": {
     "access": "public"
