@@ -21,7 +21,7 @@
     "packages:unlink": "lerna exec --scope=@cfui/* yarn unlink",
     "packages:link": "lerna exec --scope=@cfui/* yarn link",
     "packages:transpile": "lerna exec --scope=@cfui/* -- yarn watch",
-    "packages:publish": "lerna publish",
+    "packages:publish": "lerna publish --access public",
     "app:start": "cd www/app1 && yarn start",
     "app:build": "cd www/app1 && yarn build"
   },
