@@ -1,0 +1,31 @@
+{
+  "name": "root",
+  "author": "Isabelo Nicolas",
+  "version": "0.0.1",
+  "license": "ISC",
+  "private": true,
+  "packageManager": "^yarn@1.22.0",
+  "engines": {
+    "node": "^18.12.0",
+    "yarn": "^1.22.0",
+    "npm": "please-use-yarn"
+  },
+  "workspaces": [
+    "packages/*",
+    "www/app1"
+  ],
+  "scripts": {
+    "clean": "lerna clean && lerna exec -- yarn cache clean",
+    "setup": "yarn clean && yarn install --force && lerna exec -- yarn build",
+    "packages:dev": "yarn packages:transpile",
+    "packages:unlink": "lerna exec --scope=@cfui/* yarn unlink",
+    "packages:link": "lerna exec --scope=@cfui/* yarn link",
+    "packages:transpile": "lerna exec --scope=@cfui/* -- yarn watch",
+    "packages:publish": "lerna publish",
+    "app:start": "cd www/app1 && yarn start",
+    "app:build": "cd www/app1 && yarn build"
+  },
+  "devDependencies": {
+    "lerna": "^7.1.4"
+  }
+}
