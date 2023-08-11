@@ -1,6 +1,6 @@
 {
   "name": "app1",
-  "version": "0.0.1",
+  "version": "0.0.1-development.1",
   "license": "ISC",
   "private": false,
   "packageManager": "^yarn@1.22.0",
