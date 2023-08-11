@@ -1,6 +1,6 @@
 {
   "name": "@cfui/components",
-  "version": "0.0.1-development.3",
+  "version": "0.0.1-development.4",
   "license": "ISC",
   "packageManager": "^yarn@1.22.0",
   "engines": {
