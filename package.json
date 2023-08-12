@@ -17,7 +17,7 @@
   "scripts": {
     "clean": "lerna clean && lerna exec -- yarn cache clean",
     "setup": "yarn clean && yarn install --force && yarn build",
-    "build": "packages:build && yarn app1:build",
+    "build": "yarn packages:build && yarn app1:build",
     "packages:publish": "lerna publish --no-private",
     "packages:dev": "yarn packages:transpile",
     "packages:build": "lerna exec --scope=@cfui/* -- yarn build",
