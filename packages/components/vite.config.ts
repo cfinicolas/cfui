@@ -7,16 +7,11 @@ import cssInjectedByJsPlugin from 'vite-plugin-css-injected-by-js'
 
 import { name } from './package.json'
 
-// optimizeDeps: {
-//   include: ['linked-dep'],
-// },
-// build: {
-//   commonjsOptions: {
-//     include: [/linked-dep/, /node_modules/],
-//   },
-// },
 const app = async (): Promise<UserConfigExport> => {
   return defineConfig({
+    optimizeDeps: {
+      exclude: ['@cfui/components'],
+    },
     plugins: [
       cssInjectedByJsPlugin(),
       react(),
@@ -30,9 +25,6 @@ const app = async (): Promise<UserConfigExport> => {
         name,
         formats: ['es', 'umd'],
         fileName: (format) => `index.${format}.js`,
-      },
-      commonjsOptions: {
-        include: [/node_modules/],
       },
       rollupOptions: {
         external: ['react', 'react/jsx-runtime', 'react-dom'],
