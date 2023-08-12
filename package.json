@@ -17,11 +17,12 @@
   "scripts": {
     "clean": "lerna clean && lerna exec -- yarn cache clean",
     "setup": "yarn clean && yarn install --force && lerna exec -- yarn build",
-    "packages:dev": "yarn packages:transpile",
-    "packages:unlink": "lerna exec --scope=@cfui/* yarn unlink",
-    "packages:link": "lerna exec --scope=@cfui/* yarn link",
-    "packages:transpile": "lerna exec --scope=@cfui/* -- yarn watch",
     "packages:publish": "lerna publish",
+    "packages:dev": "yarn packages:transpile",
+    "packages:build": "lerna exec --scope=@cfui/* -- yarn build",
+    "packages:link": "lerna exec --scope=@cfui/* -- yarn link",
+    "packages:unlink": "lerna exec --scope=@cfui/* -- yarn unlink",
+    "packages:transpile": "lerna exec --scope=@cfui/* -- yarn watch",
     "app:start": "cd www/app1 && yarn start",
     "app:build": "cd www/app1 && yarn build"
   },
