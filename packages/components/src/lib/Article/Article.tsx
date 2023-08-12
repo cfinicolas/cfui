@@ -15,7 +15,7 @@ export const Article: React.FunctionComponent = () => {
         <div className={scss.inner}>
           <div className={scss.content}>
             <div className={scss.content_head}>
-              <span className={scss.preheader}>SMB Solutions</span>
+              <span className={scss.preheader}>SMB Solutions 3</span>
               <h2 className={scss.headline}>The Best Phone Systems for Small Businesses</h2>
               <p className={scss.subheadline}>
                 A business phone system is a multiline phone system that often includes such features as unlimited

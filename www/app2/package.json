@@ -12,7 +12,7 @@
   "homepage": "./",
   "scripts": {},
   "dependencies": {
-    "@cfui/components": "file:../../packages/components"
+    "@cfui/components": "link:../../packages/components"
   },
   "browserslist": {
     "production": [
