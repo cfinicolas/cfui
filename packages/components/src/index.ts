@@ -1,1 +1,1 @@
-export { ScoutCollector } from "./ScoutCollector/ScoutCollector";
+export { ScoutCollector } from './ScoutCollector/ScoutCollector'
