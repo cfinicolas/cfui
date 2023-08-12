@@ -1,6 +1,6 @@
 {
   "name": "app1",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "ISC",
   "private": true,
   "packageManager": "^yarn@1.22.0",
@@ -22,7 +22,7 @@
     ]
   },
   "dependencies": {
-    "@cfui/components": "^0.0.1-development.11",
+    "@cfui/components": "^0.0.1-development.12",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1"
