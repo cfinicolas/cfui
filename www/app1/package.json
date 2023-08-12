@@ -22,7 +22,7 @@
     ]
   },
   "dependencies": {
-    "@cfui/components": "^0.0.1-development.15",
+    "@cfui/components": "file:../../packages/components",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1"
