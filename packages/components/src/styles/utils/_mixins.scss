@@ -37,11 +37,27 @@
  * Container
  */
 @mixin container() {
-  display: block;
   width: 100%;
-  max-width: fn.rem(var.$container-width + (var.$container-gutter * 2));
+  max-width: fn.rem(var.$default-container-width + (var.$default-container-gutter * 2));
   margin-right: auto;
   margin-left: auto;
-  padding-right: fn.rem(var.$container-gutter);
-  padding-left: fn.rem(var.$container-gutter);
+  padding-right: fn.rem(var.$default-container-gutter);
+  padding-left: fn.rem(var.$default-container-gutter);
+}
+
+/**
+ * Reset
+ */
+@mixin normalize() {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.25;
+  color: var.$color-text-body;
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
 }

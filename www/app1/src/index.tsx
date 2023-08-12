@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom/client'
 
 import { App } from './App'
 
+import './index.scss'
+
 const renderApp = () => {
   const containerId = 'so-passwordgen-app'
 

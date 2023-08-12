@@ -1,24 +1,17 @@
-/**
- * Root
- */
 $root-font-size: 16px;
 
 /**
  * Colors
  */
-
-// grayscale
+// colors
 $color-black: #000000;
 $color-white: #ffffff;
-$color-light-gray: #eaeaea;
 
 // branding
 $color-primary: #222eed;
 
 // defaults
-$color-button-primary: $color-primary;
-$color-button-primary-hover: #9191f8;
-$color-text-muted: #606060;
+$color-text-body: #242424;
 
 /**
  * Screen Sizes
@@ -36,8 +29,10 @@ $screen: (
 );
 
 /**
- * Default size
+ * Containers
  */
-$border-radius: 6px;
-$container-width: map-get($screen, lg);
-$container-gutter: 20px;
+$default-container-width: map-get(
+  $map: $screen,
+  $key: lg,
+);
+$default-container-gutter: 20px;

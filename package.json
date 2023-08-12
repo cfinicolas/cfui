@@ -12,7 +12,7 @@
   },
   "workspaces": [
     "packages/*",
-    "www/app1"
+    "www/*"
   ],
   "scripts": {
     "clean": "lerna clean && lerna exec -- yarn cache clean",

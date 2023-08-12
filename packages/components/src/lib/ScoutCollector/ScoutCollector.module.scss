@@ -1,0 +1,62 @@
+@use '../../styles/utils/index.scss' as utils;
+
+.wrapper {
+  @include utils.normalize;
+
+  display: block;
+}
+
+.container {
+  @include utils.container;
+}
+
+.inner {
+  display: block;
+}
+
+.featured_image {
+  width: 100%;
+  margin-bottom: utils.rem(30);
+
+  > img {
+    display: block;
+    width: 100%;
+    max-height: utils.rem(250);
+    object-fit: cover;
+    object-position: center center;
+  }
+}
+
+.content {
+  display: block;
+
+  &_head {
+    margin-top: utils.rem(30);
+
+    &::after {
+      content: '';
+      display: block;
+      width: utils.rem(80);
+      border-bottom: utils.rem(4) solid utils.$color-black;
+    }
+  }
+
+  &_body {
+    line-height: 1.5;
+  }
+}
+
+.preheader {
+  font-weight: 700;
+}
+
+.headline {
+  display: block;
+  margin: 0;
+  font-size: utils.rem(38);
+}
+
+.subheadline {
+  font-weight: 700;
+  line-height: 1.5;
+}
