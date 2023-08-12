@@ -21,7 +21,7 @@ const app = async (): Promise<UserConfigExport> => {
         entry: path.resolve(__dirname, 'src/index.ts'),
         name,
         formats: ['es', 'umd'],
-        fileName: (format) => `${name}.${format}.js`,
+        fileName: (format) => `index.${format}.js`,
       },
       rollupOptions: {
         external: ['react', 'react/jsx-runtime', 'react-dom'],

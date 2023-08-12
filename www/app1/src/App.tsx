@@ -1,11 +1,13 @@
 import React from 'react'
 
-import { ScoutCollector } from '@cfui/components'
+import asd from '@cfui/components'
 
 export const App: React.FunctionComponent = () => {
+
+  console.log(asd)
   return (
     <div>
-      <ScoutCollector />
+      {/* <ScoutCollector /> */}
     </div>
   )
 }

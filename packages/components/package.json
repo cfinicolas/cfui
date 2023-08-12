@@ -11,14 +11,14 @@
     "yarn": "^1.22.0",
     "npm": "please-use-yarn"
   },
-  "main": "./dist/main.umd.js",
-  "module": "./dist/main.es.js",
+  "index": "./dist/index.umd.js",
+  "module": "./dist/index.es.js",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "import": "./dist/main.es.js",
-      "require": "./dist/main.umd.js"
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.umd.js"
     },
     "./dist/style.css": "./dist/style.css"
   },
