@@ -9,9 +9,6 @@ import { name } from './package.json'
 
 const app = async (): Promise<UserConfigExport> => {
   return defineConfig({
-    optimizeDeps: {
-      exclude: ['@cfui/components'],
-    },
     plugins: [
       cssInjectedByJsPlugin(),
       react(),
