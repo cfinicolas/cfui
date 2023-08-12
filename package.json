@@ -16,15 +16,14 @@
   ],
   "scripts": {
     "clean": "lerna clean && lerna exec -- yarn cache clean",
-    "setup": "yarn clean && yarn install --force && lerna exec -- yarn build",
+    "setup": "yarn clean && yarn install --force && yarn build",
+    "build": "packages:build && yarn app1:build",
     "packages:publish": "lerna publish --no-private",
     "packages:dev": "yarn packages:transpile",
     "packages:build": "lerna exec --scope=@cfui/* -- yarn build",
-    "packages:link": "lerna exec --scope=@cfui/* -- yarn link",
-    "packages:unlink": "lerna exec --scope=@cfui/* -- yarn unlink",
     "packages:transpile": "lerna exec --scope=@cfui/* -- yarn watch",
-    "app:start": "cd www/app1 && yarn start",
-    "app:build": "cd www/app1 && yarn build"
+    "app1:start": "cd www/app1 && yarn start",
+    "app1:build": "cd www/app1 && yarn build"
   },
   "devDependencies": {
     "lerna": "^7.1.4"
