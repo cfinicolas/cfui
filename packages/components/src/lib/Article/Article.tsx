@@ -1,8 +1,8 @@
 import React from 'react'
 
-import scss from './ScoutCollector.module.scss'
+import scss from './Article.module.scss'
 
-export const ScoutCollector: React.FunctionComponent = () => {
+export const Article: React.FunctionComponent = () => {
   return (
     <div className={scss.wrapper}>
       <div className={scss.featured_image}>
