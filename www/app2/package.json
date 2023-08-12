@@ -1,6 +1,6 @@
 {
   "name": "app2",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "ISC",
   "private": true,
   "packageManager": "^yarn@1.22.0",
@@ -12,7 +12,7 @@
   "homepage": "./",
   "scripts": {},
   "dependencies": {
-    "@cfui/components": "0.0.1-development.14"
+    "@cfui/components": "^0.0.1-development.15"
   },
   "browserslist": {
     "production": [
