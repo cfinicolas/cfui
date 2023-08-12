@@ -1,7 +1,7 @@
 {
   "name": "@cfui/components",
   "version": "0.0.1-development.7",
-  "license": "ISC",
+  "license": "MIT",
   "publishConfig": {
     "access": "public"
   },
@@ -35,5 +35,5 @@
   "files": [
     "dist"
   ],
-  "gitHead": "0dc98269d2f51978e8900981a0b4ab665d09aaf2"
+  "gitHead": "2356dfcbc87c515d8856b42b254aaacfb18ee286"
 }
