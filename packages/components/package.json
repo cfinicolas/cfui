@@ -1,6 +1,6 @@
 {
   "name": "@cfui/components",
-  "version": "0.0.1-development.8",
+  "version": "0.0.1-development.9",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
