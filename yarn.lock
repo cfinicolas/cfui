@@ -1172,7 +1172,7 @@
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
 "@cfui/components@link:packages/components":
-  version "0.0.1-development.16"
+  version "0.0.1-development.17"
 
 "@craco/craco@^7.1.0":
   version "7.1.0"
